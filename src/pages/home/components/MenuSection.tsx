@@ -66,7 +66,7 @@ export default function MenuSection() {
             <p className="text-rougetu-gold text-xs tracking-[0.2em] mb-3">OPTION</p>
             <h3 className="text-lg font-serif text-white mb-4">{draftBeerAddon.label}</h3>
             <p className="text-3xl font-display text-rougetu-gold">
-              ＋{draftBeerAddon.price.toLocaleString()}
+              +{draftBeerAddon.price.toLocaleString()}
               <span className="text-sm text-rougetu-gray ml-1">円</span>
             </p>
           </div>
@@ -95,15 +95,7 @@ export default function MenuSection() {
 
         <p className="text-center text-rougetu-gray text-xs mb-12">{pricing.note}</p>
 
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="overflow-hidden rounded-lg border border-rougetu-border bg-rougetu-dark">
-            <img
-              src={imageUrls.menu}
-              alt="Lounge狼月の料金表"
-              className="w-full aspect-square object-contain"
-              loading="lazy"
-            />
-          </div>
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="overflow-hidden rounded-lg border border-rougetu-border">
             <img
               src={imageUrls.concept}
