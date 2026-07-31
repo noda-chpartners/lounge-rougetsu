@@ -7,11 +7,8 @@ import ContactSection from "./components/ContactSection";
 import RecruitSection from "./components/RecruitSection";
 import InstagramSection from "./components/InstagramSection";
 import Footer from "./components/Footer";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export default function Home() {
-  useScrollAnimation();
-
   return (
     <div className="min-h-screen bg-rougetu-dark">
       <Header />

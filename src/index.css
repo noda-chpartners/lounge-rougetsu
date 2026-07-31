@@ -26,12 +26,6 @@
   .container-lp {
     @apply w-full px-5 md:px-8 lg:px-12 xl:px-16 max-w-[1200px] mx-auto;
   }
-  .gold-text {
-    @apply text-rougetu-gold;
-  }
-  .gold-border {
-    @apply border-rougetu-gold;
-  }
   .glass-card {
     @apply bg-rougetu-card/80 backdrop-blur-sm border border-rougetu-border rounded-lg;
   }
@@ -47,12 +41,14 @@
   .divider-gold {
     @apply w-16 h-px bg-rougetu-gold mx-auto;
   }
-  .animate-on-scroll {
+}
+
+@keyframes fadeInUp {
+  from {
     opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transform: translateY(30px);
   }
-  .animate-on-scroll.is-visible {
+  to {
     opacity: 1;
     transform: translateY(0);
   }

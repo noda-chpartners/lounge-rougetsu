@@ -6,7 +6,6 @@ export const storeInfo = {
   hours: {
     weekday: "19:00〜25:00",
     weekend: "19:00〜25:00",
-    holiday: "19:00〜25:00",
     closed: "月曜日",
   },
   seats: {
