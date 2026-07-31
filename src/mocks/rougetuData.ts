@@ -70,7 +70,7 @@ export const recruitInfo = {
 };
 
 export const imageUrls = {
-  hero: "/images/lounge-counter.png",
+  hero: "/images/db879da9d054ad5001ed1969c2582bcb.jpg",
   concept: "/images/lounge-seating.png",
   menu: "/images/price-list.png",
   interior: "/images/lounge-entrance.png",
