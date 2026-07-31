@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Noto Serif JP', serif;
+    background-color: #0a0a0f;
+    color: #f0f0f0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection {
+    background-color: rgba(201, 168, 76, 0.3);
+    color: #f0f0f0;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+  .container-lp {
+    @apply w-full px-5 md:px-8 lg:px-12 xl:px-16 max-w-[1200px] mx-auto;
+  }
+  .gold-text {
+    @apply text-rougetu-gold;
+  }
+  .gold-border {
+    @apply border-rougetu-gold;
+  }
+  .glass-card {
+    @apply bg-rougetu-card/80 backdrop-blur-sm border border-rougetu-border rounded-lg;
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center px-8 py-3 bg-rougetu-gold text-rougetu-darker font-medium tracking-wider text-sm transition-all duration-300 hover:bg-rougetu-goldLight hover:shadow-lg hover:shadow-rougetu-gold/20;
+  }
+  .btn-outline-gold {
+    @apply inline-flex items-center justify-center px-8 py-3 border border-rougetu-gold text-rougetu-gold tracking-wider text-sm transition-all duration-300 hover:bg-rougetu-gold hover:text-rougetu-darker;
+  }
+  .heading-en {
+    @apply font-display text-rougetu-gold tracking-widest uppercase text-sm md:text-base;
+  }
+  .divider-gold {
+    @apply w-16 h-px bg-rougetu-gold mx-auto;
+  }
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
